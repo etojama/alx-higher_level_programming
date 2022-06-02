@@ -4,6 +4,6 @@ if __name__ == "__main__":
     sum = 0
 
     for args in sys.argv:
-        if args != sys.arg[0]:
+        if args != sys.argv[0]:
             sum += int(args)
     print("{}".format(sum))
