@@ -4,8 +4,8 @@
 def element_at(my_list, idx):
     """Return index at position idx"""
     if idx < 0:
-        return None
+        return
     elif idx > len(my_list):
-        return None
+        return
     else:
-        return my_list.index(idx)
+        return my_list[idx]
