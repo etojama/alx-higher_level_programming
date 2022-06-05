@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
+
+# print_list_integer - prints the ints in a list.
 def print_list_integer(my_list=[]):
     """Print integer list."""
     for i in my_list:
-        print("{}".format(i))
+        print("{:d}".format(i))
