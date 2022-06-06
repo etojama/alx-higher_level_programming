@@ -3,7 +3,9 @@
 
 def multiple_returns(sentence):
     if len(sentence) == 0:
-        sentence[0] = None
+        result = (0, None)
+        return result
+        # sentence[0] = None
     else:
-        str_len = (len(sentence), sentence[0])
+        str_len = (len(sentence), sentence[0:1])
         return str_len
