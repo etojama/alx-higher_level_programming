@@ -5,6 +5,6 @@ def new_in_list(my_list, idx, element):
         return mylist.copy()
     else idx >= len(my_list):
         return my_list.copy()
-    new_list = my_list.copy()
-    new_list[idx] = element
-    return new_list
+    else:
+        new_list = my_list.copy()
+        return new_list.replace(idx, element)
