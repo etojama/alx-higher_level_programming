@@ -12,6 +12,7 @@ class Square:
     """
 
     def __init__ (self, size):
+
         """ Initialization of attributes for instances
             Args
                 size (no type): size of the square.
