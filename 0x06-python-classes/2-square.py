@@ -4,12 +4,7 @@
 
 class Square():
     """
-        Square: defines square.
-        Attributes:
-            size (no type or value identification): size of square.
-        Method:
-            __init__ : init of size attribute for each instance.
-    """
+        Square: defines square """
 
     def __init__(self, size=0):
 
@@ -17,9 +12,10 @@ class Square():
             Args:
                 size (int): size of the square.
         """
-        if (isinstance(size, int)):
+
+        if (isinstance(size, int) is False):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
             self.__size = size
-            if size < 0:
-                raise ValueError("size must be >= 0")
-            else:
-                raise TypeError("size must be an integer")
