@@ -5,28 +5,30 @@
 class Square:
     """Square class."""
 
-    def __init__(self, size=0)
+    def __init__(self, size=0):
         """Square class initialized"""
-        if not (isinstance(size, int)):
+        if (isinstance(size, int) is False):
             raise TypeError("size must be an integer")
-        if size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
-    
+        else:
+            self.__size = size
+
     @property
     def size(self):
-        """ getter function for private attribute size."""
+        """Gets the data"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ setter function for private attribute size."""
-        if not (isinstance(value, int)):
+        """Sets the data"""
+        if (isinstance(value, int) is False):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        else:
+            self.__size = value
 
-        def area(self):
-            """area of the square."""
-            return self.__size * self.__size
+    def area(self):
+        """Return the area"""
+        return self.__size**2
