@@ -2,8 +2,6 @@
 """
     Script that fetches https://intranet.htbtn.io/status
 """
-
-
 import requests
 
 
